@@ -2,13 +2,7 @@
 
 namespace Question;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/container/TContainer.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/database/container/Container.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/services/question/repository/Repository.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/services/question/controller/Controller.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/services/question/factory/Factory.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/services/question/serializer/Serializer.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/api/Validator.php';
+require_once __DIR__ . '/../../../../vendor/autoload.php';
  
 use Database;
 use Api;

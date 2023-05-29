@@ -2,8 +2,7 @@
 
 namespace Question;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/database/handler/IHandler.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/exceptions/QuestionNotFoundException.php';
+require_once __DIR__ . '/../../../../vendor/autoload.php';
 
 use Database\IHandler;
 use Question\Repository\IFactory;

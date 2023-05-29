@@ -3,10 +3,7 @@
 namespace Database;
 use Logger\Logger;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/container/TContainer.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/database/Database.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/logger/Logger.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/database/handler/Handler.php';
+require_once __DIR__ . '/../../../vendor/autoload.php';
 
 class Container {
     use \TContainer;

@@ -1,8 +1,6 @@
 <?php
 
-require_once __DIR__ . '/utils/TRegexString.php';
-require_once __DIR__ . '/utils/TStringObject.php';
-require_once __DIR__ . '/utils/TLimitedString.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 class Email {    
     use TRegexString, TStringObject, TLimitedString;

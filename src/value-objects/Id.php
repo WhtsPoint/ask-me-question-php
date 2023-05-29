@@ -1,7 +1,6 @@
 <?php
 
-require_once __DIR__ . '/utils/TRegexString.php';
-require_once __DIR__ . '/utils/TStringObject.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 class Id {    
     use TRegexString, TStringObject;

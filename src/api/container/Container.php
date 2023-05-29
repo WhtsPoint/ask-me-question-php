@@ -2,10 +2,7 @@
 
 namespace Api;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/container/TContainer.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/api/Router.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/logger/Logger.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/api/Request.php';
+require_once __DIR__ . '/../../../vendor/autoload.php';
 
 use Logger\Logger;
 

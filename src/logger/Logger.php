@@ -2,8 +2,7 @@
 
 namespace Logger;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/config/logger.php';
-require_once 'ILogger.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 class Logger implements ILogger {
     public function writeError(string $message): void {

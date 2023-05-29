@@ -2,8 +2,7 @@
 
 namespace Database;
 
-require_once 'IHandler.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/logger/ILogger.php';
+require_once __DIR__ . '/../../../vendor/autoload.php';
 
 use Logger\ILogger;
 

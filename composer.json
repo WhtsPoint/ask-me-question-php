@@ -1,7 +1,8 @@
 {
     "name": "whtspoint/ask-me-question",
     "autoload": {
-        "classmap": ["src"]
+        "classmap": ["src"],
+        "files": ["src/api/container/getRouter.php"]
     },
     "authors": [
         {

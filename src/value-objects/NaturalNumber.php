@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/utils/TIntObject.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 class NaturalNumber {
     use TIntObject;
