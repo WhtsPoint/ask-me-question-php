@@ -1,0 +1,7 @@
+.idea
+/vendor/
+composer.lock
+phpMyAdmin
+*.log
+.phpunit.result.cache
+/ngnix/
