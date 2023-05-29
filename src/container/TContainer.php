@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/src/exceptions/ContainerItemNotFoundException.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 trait TContainer {
     private array $objects;

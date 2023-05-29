@@ -10,5 +10,8 @@
         <testsuite name="ApiAddition">
             <directory>tests/api</directory>
         </testsuite>
+        <testsuite name="Utils">
+            <directory>tests/utils</directory>
+        </testsuite>
     </testsuites>
 </phpunit>

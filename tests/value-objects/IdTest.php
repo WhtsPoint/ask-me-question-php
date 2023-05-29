@@ -2,7 +2,6 @@
 
 use PHPUnit\Framework\TestCase;
 
-
 class IdTest extends TestCase {
     public function testValidValue(): void {
         $value = uniqid();
