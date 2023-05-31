@@ -7,10 +7,12 @@ use Logger\ILogger;
 class Router {
     public function __construct(
         private ILogger $logger,
-        private Request $router
+        private Request $router,
+        private Settings $settings
     ) {}
 
     public function handle(callable $callback, ?array $methods = NULL): void {
+        $this->settings->setup();
         try {
             if ($methods) $this->router->validateMethod($methods);
             $response = $callback();

@@ -11,7 +11,7 @@ class Container {
 
     public function __construct() {
         $this->objects = [
-            Router::class => fn() => new Router(new Logger(), new Request())
+            Router::class => fn() => new Router(new Logger(), new Request(), new Settings())
         ];
     }
 }

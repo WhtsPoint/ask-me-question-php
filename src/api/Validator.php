@@ -5,9 +5,9 @@ namespace Api;
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 class Validator {
-    public function validateBody(callable $callback): void {
+    public function validateBody(callable $callback): mixed {
         try {
-            $callback();
+            return $callback();
         } catch (\InvalidArgumentException $exception) {
             throw new InvalidRequestException(400, $exception->getMessage());
         }

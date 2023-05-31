@@ -7,18 +7,21 @@ class LimitedStringTest extends TestCase {
 
     private string $value;
 
-    public function testShortValue() {
-        $this->value = '';
-        $this->checkSize();
-    }
+    /**
+      * @testWith [""]
+      *           ["а"]
+      *           ["абвгґдеєжзиіїйклмнопрстуфхцчшщьюяabcdefghijklmnopqr"] 
+      *           ["абвгґдеєжзиіїйклмнопрстуфхцчшщьюяabcdefghijklmnopqrt"]
+      */
 
-    public function testLongValue() {
-        $this->value = str_repeat(' ', 51);
+    public function testValue($value): void {
+        $this->value = $value;
         $this->checkSize();
     }
 
     private function checkSize(): void {
         $this->expectException(InvalidArgumentException::class);
-        $this->size(1, 50);
+        $this->expectExceptionMessage('Invalid limitedstringtest length (min: 2,max: 50) given: ' . mb_strlen($this->value));
+        $this->size(2, 50);
     }
 }

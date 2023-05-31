@@ -15,7 +15,12 @@ class Container {
         
         $this->objects = [
             Repository::class => fn() => new Repository($database, new Factory()),
-            Controller::class => fn() => new Controller($this->get(Repository::class), new Api\Validator(), new Serializer())
+            Controller::class => fn() => new Controller(
+                $this->get(Repository::class),
+                new Api\Validator(),
+                new Serializer(),
+                new Helper()
+            )
         ];
     }
 }

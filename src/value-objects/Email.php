@@ -8,7 +8,7 @@ class Email {
     public function __construct($value) {
         $this->isString($value);
         $this->value = $value;
-        $this->regex('/^[^@]+@[^\.@]+\.[^\.@]+$/');
+        $this->regex('/^[^@\s]+@[^\.@\s]+\.[^\.@\s]+$/');
         $this->size(max: 100);
     }
 }
