@@ -10,10 +10,10 @@
 Також треба встановити пакети composer
 Для розробки:
 ```sh
-    composer.phar install --dev
+composer.phar install --dev
 ```
 У роботу:
 ```sh
-    composer.phar install --dev
+composer.phar install --dev
 ```
 Проект працюю на версії PHP 8.2.6
