@@ -38,11 +38,6 @@ class Repository {
         return array_map(fn (array $question) => $this->factory->createFromArray($question), $questions);
     }
 
-    public function delete(string $id): void {
-        if(!$this->isExists($id)) throw new QuestionNotFoundException();
-        $this->handler->query("DELETE FROM questions WHERE id = ?", [$id]);
-    }
-
     public function isExists(string $id): bool {
         return $this->handler->query('SELECT COUNT(*) > 0 `isExists` FROM questions WHERE id = ?', [$id])[0]['isExists'];
     }
